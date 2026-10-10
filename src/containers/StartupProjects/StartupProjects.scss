@@ -24,7 +24,7 @@
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
+  justify-content: stretch;
   min-height: 210px;
 }
 .project-card-light {
@@ -42,7 +42,15 @@
 }
 
 .project-detail {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   text-align: center;
+}
+
+.project-card-footer {
+  margin-top: auto;
+  padding-top: 1rem;
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;

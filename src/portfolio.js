@@ -106,9 +106,9 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    {Stack: "Backend & Distributed Systems", progressPercentage: "92%"},
-    {Stack: "Cloud & Production Engineering", progressPercentage: "85%"},
-    {Stack: "Agentic Engineering", progressPercentage: "88%"}
+    {Stack: "Backend & API Engineering", progressPercentage: "92%"},
+    {Stack: "Microservices & System Design", progressPercentage: "88%"},
+    {Stack: "Production Reliability & Optimization", progressPercentage: "85%"}
   ],
   displayCodersrank: false
 };
@@ -137,10 +137,11 @@ const workExperiences = {
       date: "June 2021 - May 2022",
       desc: "Supply Chain Squad - Karachi, Pakistan (Hybrid)",
       descBullets: [
-        "Reduced server load by 10% by optimizing the inventory update API.",
-        "Architected an ETA calculation engine using historical data to produce realistic real-time delivery estimates.",
-        "Improved inventory integrity with progressive retries for failed Amazon SQS events.",
-        "Mentored graduate engineers through the LIFT program and led their technical onboarding."
+        "Built an order-delivery ETA engine using historical lifecycle data to produce phase-specific, order-level estimates.",
+        "Added exponential backoff for failed Amazon SQS events, protecting inventory accuracy and reducing manual correction.",
+        "Helped build the Supply Chain microservice from scratch, migrating and optimizing legacy endpoints under a no-QA ownership model.",
+        "Optimized an inventory API consuming 30% of server time, reducing overall server load by 10%.",
+        "Resolved a major production defect responsible for more than USD 10K in liability during the preceding month."
       ]
     }
   ]
@@ -245,7 +246,21 @@ const blogSection = {
   display: true
 };
 
-const talkSection = {title: "Talks", subtitle: "", talks: [], display: false};
+const talkSection = {
+  title: "Talks & Teaching",
+  subtitle:
+    "Sharing practical backend engineering knowledge with the next generation of engineers.",
+  talks: [
+    {
+      title: "API Client Generation with OpenAPI",
+      subtitle:
+        "A technical session on using Swagger Codegen to generate API clients from OpenAPI specifications, delivered as part of Careem's NextGen mentorship program.",
+      event_url: "https://www.youtube.com/watch?v=uNQ_rSVWYGI",
+      event_label: "Watch on YouTube"
+    }
+  ],
+  display: true
+};
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),

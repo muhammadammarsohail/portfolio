@@ -15,12 +15,26 @@ export default function TalkCard({talkDetails}) {
           <p className="talk-card-subtitle">{talkDetails.subtitle}</p>
 
           <div className="card-footer-button-div">
-            <a href={talkDetails.slides_url} target="_" className="talk-button">
-              Slides
-            </a>
-            <a href={talkDetails.event_url} target="_" className="talk-button">
-              Event
-            </a>
+            {talkDetails.slides_url ? (
+              <a
+                href={talkDetails.slides_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="talk-button"
+              >
+                {talkDetails.slides_label || "Slides"}
+              </a>
+            ) : null}
+            {talkDetails.event_url ? (
+              <a
+                href={talkDetails.event_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="talk-button"
+              >
+                {talkDetails.event_label || "Event"}
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
