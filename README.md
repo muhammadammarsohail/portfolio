@@ -1,6 +1,6 @@
 # Ammar Sohail - Portfolio
 
-Personal portfolio website for Ammar Sohail, a backend engineer specializing in distributed systems, production engineering, and agentic software-development workflows.
+Personal portfolio website for Ammar Sohail, a senior software engineer specializing in backend systems, distributed systems, production engineering, and agentic software-development workflows.
 
 ## Highlights
 

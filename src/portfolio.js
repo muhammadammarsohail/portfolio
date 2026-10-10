@@ -18,7 +18,7 @@ const greeting = {
   username: "Ammar Sohail",
   title: "Hi, I'm Ammar",
   subTitle: emoji(
-    "Backend Engineer with 5+ years of experience building resilient, high-scale systems at Careem and Airlift. I combine strong distributed-systems fundamentals with agentic engineering to ship reliable software faster."
+    "Senior Software Engineer with 5+ years of experience building resilient, high-scale systems at Careem and Airlift. I combine strong distributed-systems fundamentals with agentic engineering to ship reliable software faster."
   ),
   resumeLink: "resume.pdf",
   displayGreeting: true
