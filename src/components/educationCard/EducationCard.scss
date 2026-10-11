@@ -40,6 +40,17 @@
   height: 27px;
 }
 
+.education-school-link {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.education-school-link:hover .education-text-school {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .education-roundedimg {
   object-fit: cover;
   margin-right: 2rem;

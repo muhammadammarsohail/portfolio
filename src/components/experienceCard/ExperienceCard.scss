@@ -104,6 +104,17 @@
   border-radius: 50%;
 }
 
+.experience-careem-logo {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
+
+.experience-filled-logo {
+  object-fit: cover;
+  padding: 0;
+}
+
 .experience-company-initials {
   align-items: center;
   background: $lightBackground2;
@@ -142,6 +153,21 @@
 .experience-text-details {
   padding: 1.5rem;
   margin-top: 2rem;
+}
+
+.experience-text-details ul {
+  margin: 1rem 0 0;
+  padding-left: 1.4rem;
+}
+
+.experience-text-details li {
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+  padding-left: 0.2rem;
+}
+
+.experience-text-details li:last-child {
+  margin-bottom: 0;
 }
 
 /* Media Query */

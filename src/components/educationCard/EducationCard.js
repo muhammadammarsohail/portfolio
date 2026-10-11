@@ -35,7 +35,18 @@ export default function EducationCard({school}) {
             </div>
           )}
           <div className="education-card-right">
-            <h5 className="education-text-school">{school.schoolName}</h5>
+            {school.schoolUrl ? (
+              <a
+                className="education-school-link"
+                href={school.schoolUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5 className="education-text-school">{school.schoolName}</h5>
+              </a>
+            ) : (
+              <h5 className="education-text-school">{school.schoolName}</h5>
+            )}
 
             <div className="education-text-details">
               <h5

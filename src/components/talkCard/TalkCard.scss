@@ -11,17 +11,21 @@
   width: 380px;
   height: 300px;
   border-radius: 4px;
-  box-shadow: 0px 20px 50px $darkBoxShadow;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 50px;
 }
 .rectangle:hover {
-  box-shadow: 0 20px 40px $textColorDark;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
 }
 .dark-rectangle {
-  box-shadow: 0px 0px 20px 0px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+}
+.dark-rectangle:hover {
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.72);
 }
 .mask {
   clip: rect(0px, 460px, 220px, 0px);

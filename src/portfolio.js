@@ -93,6 +93,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of Karachi",
+      schoolUrl: "https://uok.edu.pk/",
       logo: karachiUniversityLogo,
       subHeader: "Bachelor of Science in Computer Science",
       duration: "January 2018 - December 2021",
@@ -123,6 +124,7 @@ const workExperiences = {
       company: "Careem",
       companyUrl: "https://www.careem.com/",
       companylogo: careemLogo,
+      logoClassName: "experience-careem-logo",
       date: "December 2022 - Present",
       desc: "Karachi, Pakistan (On-site)",
       descBullets: [
@@ -131,17 +133,6 @@ const workExperiences = {
         "Built live captain tracking for Express merchants using ScheduledThreadPoolExecutor, ConcurrentHashMap, and Redis.",
         "Led Kubernetes readiness, API optimization, end-to-end tracing, and acceptance testing initiatives that helped Express achieve zero production incidents for the year.",
         "Mentored new engineers and delivered learning sessions on Redis and Swagger Codegen."
-      ]
-    },
-    {
-      role: "Interview Engineer",
-      company: "Karat",
-      companyUrl: "https://karat.com/",
-      companylogo: karatLogo,
-      date: "June 2026 - Present",
-      desc: "Remote",
-      descBullets: [
-        "Apprenticeship focused on systems design, problem solving, and structured technical interviewing."
       ]
     },
     {
@@ -157,6 +148,18 @@ const workExperiences = {
         "Helped build the Supply Chain microservice from scratch, migrating and optimizing legacy endpoints under a no-QA ownership model.",
         "Optimized an inventory API consuming 30% of server time, reducing overall server load by 10%.",
         "Resolved a major production defect responsible for more than USD 10K in liability during the preceding month."
+      ]
+    },
+    {
+      role: "Interview Engineer",
+      company: "Karat",
+      companyUrl: "https://karat.com/",
+      companylogo: karatLogo,
+      logoClassName: "experience-filled-logo",
+      date: "June 2026 - Present",
+      desc: "Remote",
+      descBullets: [
+        "Apprenticeship focused on systems design, problem solving, and structured technical interviewing."
       ]
     },
     {
