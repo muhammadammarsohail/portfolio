@@ -12,6 +12,10 @@
   flex: 1;
 }
 
+.contact-header {
+  min-width: 0;
+}
+
 .contact-title {
   font-size: 65px;
   font-weight: 400;
@@ -79,6 +83,16 @@
   .contact-detail,
   .contact-detail-email {
     font-size: 20px;
+  }
+
+  .contact-detail-email {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-header .social-media-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .contact-image-div {

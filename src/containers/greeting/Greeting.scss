@@ -36,7 +36,12 @@
 
 .button-greeting-div {
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 40px;
+}
+.button-greeting-div .main-button {
+  margin-right: 0;
 }
 .download-link-button {
   text-decoration: none;
@@ -101,7 +106,7 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    justify-content: center;
   }
   .greeting-text {
     font-size: 30px;
@@ -117,6 +122,19 @@
   }
   .greeting-image-div {
     height: 256px;
+  }
+}
+
+@media (max-width: 420px) {
+  .button-greeting-div {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button-greeting-div .main-button {
+    box-sizing: border-box;
+    margin-top: 0;
+    width: 100%;
   }
 }
 

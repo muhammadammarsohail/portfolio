@@ -4,6 +4,8 @@ import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
 import careemLogo from "./assets/images/careemLogo.png";
 import airliftLogo from "./assets/images/airliftLogo.png";
+import karatLogo from "./assets/images/karatLogo.png";
+import siliconplexLogo from "./assets/images/siliconplexLogo.png";
 import karachiUniversityLogo from "./assets/images/karachiUniversityLogo.png";
 
 const splashScreen = {
@@ -119,29 +121,65 @@ const workExperiences = {
     {
       role: "Software Engineer II",
       company: "Careem",
+      companyUrl: "https://www.careem.com/",
       companylogo: careemLogo,
       date: "December 2022 - Present",
-      desc: "Careem Express Squad - Karachi, Pakistan (Hybrid)",
+      desc: "Karachi, Pakistan (On-site)",
       descBullets: [
-        "Maintain high-throughput Java and Spring Boot APIs supporting 200+ B2B logistics partners with 99.9% uptime.",
-        "Led Kubernetes readiness, API optimization, end-to-end tracing, and acceptance testing initiatives with zero production incidents.",
-        "Built live captain tracking with Redis and Java, helping onboard 10+ high-value merchants.",
-        "Implemented Dynamic Delivery Radius, protecting USD 1M in annual revenue by optimizing captain supply.",
-        "Use AI-assisted development to accelerate system design and implementation by 60%, and mentor engineers through Careem's NextGen program."
+        "Migrating the Careem Express API to a new logistics platform, supporting the deprecation of the legacy stack.",
+        "Implemented Dynamic Delivery Radius to optimize captain supply during stress situations, protecting up to USD 1M in annual revenue.",
+        "Built live captain tracking for Express merchants using ScheduledThreadPoolExecutor, ConcurrentHashMap, and Redis.",
+        "Led Kubernetes readiness, API optimization, end-to-end tracing, and acceptance testing initiatives that helped Express achieve zero production incidents for the year.",
+        "Mentored new engineers and delivered learning sessions on Redis and Swagger Codegen."
+      ]
+    },
+    {
+      role: "Interview Engineer",
+      company: "Karat",
+      companyUrl: "https://karat.com/",
+      companylogo: karatLogo,
+      date: "June 2026 - Present",
+      desc: "Remote",
+      descBullets: [
+        "Apprenticeship focused on systems design, problem solving, and structured technical interviewing."
       ]
     },
     {
       role: "Associate Software Engineer",
       company: "Airlift Technologies",
+      companyUrl: "https://www.instagram.com/airlift_pk/?hl=en",
       companylogo: airliftLogo,
-      date: "June 2021 - May 2022",
-      desc: "Supply Chain Squad - Karachi, Pakistan (Hybrid)",
+      date: "June 2021 - November 2022",
+      desc: "Karachi, Pakistan",
       descBullets: [
         "Built an order-delivery ETA engine using historical lifecycle data to produce phase-specific, order-level estimates.",
         "Added exponential backoff for failed Amazon SQS events, protecting inventory accuracy and reducing manual correction.",
         "Helped build the Supply Chain microservice from scratch, migrating and optimizing legacy endpoints under a no-QA ownership model.",
         "Optimized an inventory API consuming 30% of server time, reducing overall server load by 10%.",
         "Resolved a major production defect responsible for more than USD 10K in liability during the preceding month."
+      ]
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Siliconplex",
+      companyUrl: "https://siliconplex.com/",
+      companylogo: siliconplexLogo,
+      date: "May 2021 - June 2021",
+      desc: "Karachi, Pakistan",
+      descBullets: [
+        "Co-developed a Python web crawler using XML sitemaps.",
+        "Built a Django charity application, from ERD design through API development."
+      ]
+    },
+    {
+      role: "Teaching Assistant",
+      company: "University of Karachi",
+      companyUrl: "https://uok.edu.pk/",
+      companylogo: karachiUniversityLogo,
+      date: "January 2019 - February 2019",
+      desc: "Karachi, Pakistan (On-site)",
+      descBullets: [
+        "Supported computer science teaching with an emphasis on foundational problem-solving skills."
       ]
     }
   ]
@@ -220,7 +258,7 @@ const achievementSection = {
 };
 
 const blogSection = {
-  title: "Writing",
+  title: "Blogs",
   subtitle: "Lessons from building, operating, and improving production systems.",
   displayMediumBlogs: "false",
   blogs: [
